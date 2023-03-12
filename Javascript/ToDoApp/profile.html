@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <h1>Profile Page</h1>
+
+    <div class="card">
+        <img src="ProfilePicture.jfif" alt="John" style="width: 30%">
+        <br><br>
+        <h2 id="name"  contentEditable="true"></h2>
+        <h2 id="last-name"  contentEditable="true"></h2>
+        <p id="email" class="title" contenteditable="true"></p>
+        <p id="address" contenteditable="true"></p>
+
+        <button id="ToDoListButton" class="float-left submit-button" >To Do List</button>
+        <script type="text/javascript">
+            document.getElementById("ToDoListButton").onclick = function () {
+                location.href = "ToDoList.html";
+            };
+        </script>
+        <button id="LogOutButton" class="float-left submit-button" >Log Out</button>
+        <script type="text/javascript">
+            document.getElementById("LogOutButton").onclick = function () {
+                location.href = "login.html";
+            };
+        </script>
+    </div>
+    <div>
+        <script src="profile.js"></script>
+    </div>
+</body>
+</html>
