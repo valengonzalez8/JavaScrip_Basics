@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ToDoList.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <div>
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Write a task...">
+            <input type="date" id="date">   
+        </div>
+    
+        <div>      
+            <div class="checkbox-container">
+                <input type="checkbox" id="category" name="check" value="hobbie" onclick="onlyOne(this)" class="checkbox">
+                <label for="hobbie"> Hobbie </label><br>
+                </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="category" name="check" value="work" onclick="onlyOne(this)" class="checkbox">
+                <label for="work"> Work </label><br>
+            </div>
+            <div class="checkbox-container">    
+                <input type="checkbox" id="category" name="check" value="chores" onclick="onlyOne(this)" class="checkbox">
+                <label for="chores"> Chores </label><br>
+            </div>
+            <span onclick="addItem()" class="addBtn">Add</span>
+        </div>
+
+        </div>
+
+        
+    <div class="controls">
+        <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Sort</button>
+            <div class="dropdown-menu">
+                <button id="sort-asc" >Alpha Ascending</button>
+                <button id="sort-desc" >Alpha Descending</button>
+                <button id="date-asc" >Date Ascending</button>
+                <button id="date-desc" >Date Descending</button>
+            </div>
+          </div>
+        <div class="dropdown2">
+            <button class="dropdown-button2">Categoy</button>
+            <div class="dropdown-menu2">
+                <button id="hobbie" >Hobbie</button>
+                <button id="work" >Work</button>
+                <button id="chores" >Chores</button>
+            </div>
+          </div>        
+    </div>
+    <div id="myList">
+        <ul id="myUL"></ul>
+    </div>  
+    
+    <br><br>
+    <button id="ProfileButton" class="float-left addBtn" >Go back to Profile</button>
+    <script type="text/javascript">
+        document.getElementById("ProfileButton").onclick = function () {
+            location.href = "profile.html";
+        };
+    </script> 
+    <script src="ToDoList.js"></script>
+  
+</body>
+</html>
