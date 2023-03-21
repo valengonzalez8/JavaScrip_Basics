@@ -4,7 +4,7 @@ function myDisplayer(something) {
     document.getElementById("demo").innerHTML = something;
   }
   
-  function myCalculator(num1, num2, myCallback) {
+function myCalculator(num1, num2, myCallback) {
     let sum = num1 + num2;
     myCallback(sum);
   }
@@ -54,7 +54,6 @@ function myDisplayer(some) {
     let x = 0;
   
   // The producing code (this may take some time)
-  
     if (x == 0) {
       myResolve("OK");
     } else {

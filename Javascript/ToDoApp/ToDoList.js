@@ -8,8 +8,6 @@ const getUser = () => {
   return {user, userData};
 }
 
-
-
 //Sort items
 const sortBtns = document.querySelectorAll(".dropdown-menu button");
 const dropdown = document.querySelector('.dropdown');
